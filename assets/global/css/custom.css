@@ -1,0 +1,28 @@
+/* Logo */
+.logo a, .logo a:hover{
+  font-size: 25px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.logo a span{
+  color: #ea3f41;
+}
+.page-logo a, .page-logo a:hover{
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  margin-top: 11px;
+}
+.page-logo a span{
+  color: #ea3f41;
+}
+
+/* Datatable vertical align */
+table.dataTable tbody td {
+  vertical-align: middle;
+}
+
+/* Icon padding in buttons */
+button i{
+  padding: 0 2px;
+}

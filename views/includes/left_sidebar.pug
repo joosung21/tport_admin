@@ -1,0 +1,22 @@
+.page-sidebar-wrapper
+  .page-sidebar.navbar-collapse.collapse
+    //- SIDEBAR MENU
+    ul.page-sidebar-menu.page-header-fixed(data-keep-expanded='false', data-auto-scroll='true', data-slide-speed='200', style='padding-top: 20px')
+      //- SIDEBAR TOGGLER BUTTON
+      li.sidebar-toggler-wrapper.hide
+        .sidebar-toggler
+          span
+      li.heading
+        h3.uppercase ETC
+      li.nav-item(class= pageId == "tport_members" ? "active" : "")
+        a.nav-link.nav-toggle(href='/tport/members')
+          i.icon-users
+          span.title 직원관리
+
+          //- span.arrow
+        //- ul.sub-menu
+          li.nav-item.active
+            a.nav-link(href='app_todo')
+              i.icon-check
+              span.title ToDo
+              span.selected
