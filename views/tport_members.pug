@@ -32,7 +32,7 @@ include includes/left_sidebar.pug
               i.icon-users.font-dark
               span.caption-subject 18건의 직원 리스트를 불러왔습니다.
             .right.text-right
-              button.btn.btn-success.sbold
+              button.btn.btn-success.sbold(data-toggle='modal', href='#add_member')
                 | 직원추가
                 i.fa.fa-plus-circle
           .portlet-body
@@ -224,6 +224,19 @@ include includes/left_sidebar.pug
                       |   수정
                     button.btn.btn-default.btn-sm(type='button')
                       i.fa.fa-trash-o
+
+//- 직원추가 Modal
+#add_member.modal.fade(tabindex='-1', role='basic', aria-hidden='true')
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button.close(type='button', data-dismiss='modal', aria-hidden='true')
+        h4.modal-title 직원 추가
+      .modal-body
+
+      .modal-footer
+        button.btn.dark.btn-outline(type='button', data-dismiss='modal') 취소
+        button.btn.green(type='button') 추가
 
 include includes/footer.pug
 
