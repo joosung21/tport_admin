@@ -233,6 +233,31 @@ include includes/left_sidebar.pug
         button.close(type='button', data-dismiss='modal', aria-hidden='true')
         h4.modal-title 직원 추가
       .modal-body
+        form.form-horizontal(role='form')
+          .form-group
+            label.col-md-4.control-label(for='inputName') 직원명
+            .col-md-6
+              input#inputName.form-control(type='text', placeholder='한글 실명을 입력해주세요')
+          .form-group
+            label.col-md-4.control-label(for='inputID') 이메일 아이디
+            .col-md-6
+              input#inputID.form-control(type='email', placeholder='회사 이메일을 입력해주세요')
+          .form-group
+            label.col-md-4.control-label 권한
+            .col-md-6
+              .mt-radio-list(style="padding-top:10px;")
+                label.mt-radio
+                  | 슈퍼관리자
+                  input(type='radio', value='1', name='test', checked='ture')
+                  span
+                //- label.mt-radio
+                //-   | Radio 2
+                //-   input(type='radio', value='1', name='test')
+                //-   span
+                //- label.mt-radio
+                //-   | Radio 3
+                //-   input(type='radio', value='1', name='test')
+                //-   span
 
       .modal-footer
         button.btn.dark.btn-outline(type='button', data-dismiss='modal') 취소
