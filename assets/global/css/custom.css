@@ -31,3 +31,13 @@ table.dataTable tbody td {
 button i{
   padding: 0 2px;
 }
+
+/* Counterup small text */
+.dashboard-stat .number .text-small{
+  font-size: 18px;
+  margin-left: 4px;
+}
+/* Counterup box padding */
+.dashboard-stat{
+  padding-bottom: 17px;
+}
