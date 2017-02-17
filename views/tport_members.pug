@@ -22,7 +22,6 @@ include includes/left_sidebar.pug
     //-- PAGE TITLE
     h1.page-title
       | 직원관리
-      //- small ZARI GDS를 통해 판매된 예약 내역입니다
     .row
       .col-md-12
         //- LIST TABLE PORTLET
@@ -39,10 +38,10 @@ include includes/left_sidebar.pug
             table#member_list.table.table-striped.table-bordered.table-hover
               thead
                 tr
-                  th.text-center 직원명
-                  th.text-center 이메일 아이디
-                  th.text-center 권한
-                  th.text-center 관리
+                  th 직원명
+                  th 이메일 아이디
+                  th 권한
+                  th 관리
               tbody
                 tr
                   td 한성환
@@ -52,177 +51,177 @@ include includes/left_sidebar.pug
                     button.btn.btn-default.btn-sm(type='button', data-toggle='modal', href='#edit_member')
                       i.fa.fa-pencil
                       |   수정
-                    button.btn.btn-default.btn-sm(type='button')
+                    button.btn.btn-default.btn-sm(type='button', data-toggle='modal', href='#delete_member')
                       i.fa.fa-trash-o
                 tr
                   td 노재원
                   td jaewon@tport.io
                   td 슈퍼관리자
                   td
-                    button.btn.btn-default.btn-sm(type='button')
+                    button.btn.btn-default.btn-sm(type='button', data-toggle='modal', href='#edit_member')
                       i.fa.fa-pencil
                       |   수정
-                    button.btn.btn-default.btn-sm(type='button')
+                    button.btn.btn-default.btn-sm(type='button', data-toggle='modal', href='#delete_member')
                       i.fa.fa-trash-o
                 tr
                   td 김남환
                   td kay@tport.io
                   td 슈퍼관리자
                   td
-                    button.btn.btn-default.btn-sm(type='button')
+                    button.btn.btn-default.btn-sm(type='button', data-toggle='modal', href='#edit_member')
                       i.fa.fa-pencil
                       |   수정
-                    button.btn.btn-default.btn-sm(type='button')
+                    button.btn.btn-default.btn-sm(type='button', data-toggle='modal', href='#delete_member')
                       i.fa.fa-trash-o
                 tr
                   td 정인혁
                   td edon@tport.io
                   td 슈퍼관리자
                   td
-                    button.btn.btn-default.btn-sm(type='button')
+                    button.btn.btn-default.btn-sm(type='button', data-toggle='modal', href='#edit_member')
                       i.fa.fa-pencil
                       |   수정
-                    button.btn.btn-default.btn-sm(type='button')
+                    button.btn.btn-default.btn-sm(type='button', data-toggle='modal', href='#delete_member')
                       i.fa.fa-trash-o
                 tr
                   td 우창하
                   td jeff.woo@tport.io
                   td 슈퍼관리자
                   td
-                    button.btn.btn-default.btn-sm(type='button')
+                    button.btn.btn-default.btn-sm(type='button', data-toggle='modal', href='#edit_member')
                       i.fa.fa-pencil
                       |   수정
-                    button.btn.btn-default.btn-sm(type='button')
+                    button.btn.btn-default.btn-sm(type='button', data-toggle='modal', href='#delete_member')
                       i.fa.fa-trash-o
                 tr
                   td 이진혁
                   td jin@tport.io
                   td 슈퍼관리자
                   td
-                    button.btn.btn-default.btn-sm(type='button')
+                    button.btn.btn-default.btn-sm(type='button', data-toggle='modal', href='#edit_member')
                       i.fa.fa-pencil
                       |   수정
-                    button.btn.btn-default.btn-sm(type='button')
+                    button.btn.btn-default.btn-sm(type='button', data-toggle='modal', href='#delete_member')
                       i.fa.fa-trash-o
                 tr
                   td 원경묵
                   td jade.won@tport.io
                   td 슈퍼관리자
                   td
-                    button.btn.btn-default.btn-sm(type='button')
+                    button.btn.btn-default.btn-sm(type='button', data-toggle='modal', href='#edit_member')
                       i.fa.fa-pencil
                       |   수정
-                    button.btn.btn-default.btn-sm(type='button')
+                    button.btn.btn-default.btn-sm(type='button', data-toggle='modal', href='#delete_member')
                       i.fa.fa-trash-o
                 tr
                   td 안주성
                   td jay.ahn@tport.io
                   td 슈퍼관리자
                   td
-                    button.btn.btn-default.btn-sm(type='button')
+                    button.btn.btn-default.btn-sm(type='button', data-toggle='modal', href='#edit_member')
                       i.fa.fa-pencil
                       |   수정
-                    button.btn.btn-default.btn-sm(type='button')
+                    button.btn.btn-default.btn-sm(type='button', data-toggle='modal', href='#delete_member')
                       i.fa.fa-trash-o
                 tr
                   td 조영수
                   td damon.cho@tport.io
                   td 슈퍼관리자
                   td
-                    button.btn.btn-default.btn-sm(type='button')
+                    button.btn.btn-default.btn-sm(type='button', data-toggle='modal', href='#edit_member')
                       i.fa.fa-pencil
                       |   수정
-                    button.btn.btn-default.btn-sm(type='button')
+                    button.btn.btn-default.btn-sm(type='button', data-toggle='modal', href='#delete_member')
                       i.fa.fa-trash-o
                 tr
                   td 김은총
                   td smile@tport.io
                   td 슈퍼관리자
                   td
-                    button.btn.btn-default.btn-sm(type='button')
+                    button.btn.btn-default.btn-sm(type='button', data-toggle='modal', href='#edit_member')
                       i.fa.fa-pencil
                       |   수정
-                    button.btn.btn-default.btn-sm(type='button')
+                    button.btn.btn-default.btn-sm(type='button', data-toggle='modal', href='#delete_member')
                       i.fa.fa-trash-o
                 tr
                   td 장윤정
                   td jessica.jang@tport.io
                   td 슈퍼관리자
                   td
-                    button.btn.btn-default.btn-sm(type='button')
+                    button.btn.btn-default.btn-sm(type='button', data-toggle='modal', href='#edit_member')
                       i.fa.fa-pencil
                       |   수정
-                    button.btn.btn-default.btn-sm(type='button')
+                    button.btn.btn-default.btn-sm(type='button', data-toggle='modal', href='#delete_member')
                       i.fa.fa-trash-o
                 tr
                   td 방혜선
                   td sunny.bang@tport.io
                   td 슈퍼관리자
                   td
-                    button.btn.btn-default.btn-sm(type='button')
+                    button.btn.btn-default.btn-sm(type='button', data-toggle='modal', href='#edit_member')
                       i.fa.fa-pencil
                       |   수정
-                    button.btn.btn-default.btn-sm(type='button')
+                    button.btn.btn-default.btn-sm(type='button', data-toggle='modal', href='#delete_member')
                       i.fa.fa-trash-o
                 tr
                   td 노경표
                   td steve.noh@tport.io
                   td 슈퍼관리자
                   td
-                    button.btn.btn-default.btn-sm(type='button')
+                    button.btn.btn-default.btn-sm(type='button', data-toggle='modal', href='#edit_member')
                       i.fa.fa-pencil
                       |   수정
-                    button.btn.btn-default.btn-sm(type='button')
+                    button.btn.btn-default.btn-sm(type='button', data-toggle='modal', href='#delete_member')
                       i.fa.fa-trash-o
                 tr
                   td 최유진
                   td chloe@tport.io
                   td 슈퍼관리자
                   td
-                    button.btn.btn-default.btn-sm(type='button')
+                    button.btn.btn-default.btn-sm(type='button', data-toggle='modal', href='#edit_member')
                       i.fa.fa-pencil
                       |   수정
-                    button.btn.btn-default.btn-sm(type='button')
+                    button.btn.btn-default.btn-sm(type='button', data-toggle='modal', href='#delete_member')
                       i.fa.fa-trash-o
                 tr
                   td 최상민
                   td peter.choi@tport.io
                   td 슈퍼관리자
                   td
-                    button.btn.btn-default.btn-sm(type='button')
+                    button.btn.btn-default.btn-sm(type='button', data-toggle='modal', href='#edit_member')
                       i.fa.fa-pencil
                       |   수정
-                    button.btn.btn-default.btn-sm(type='button')
+                    button.btn.btn-default.btn-sm(type='button', data-toggle='modal', href='#delete_member')
                       i.fa.fa-trash-o
                 tr
                   td 김지호
                   td jiho@tport.io
                   td 슈퍼관리자
                   td
-                    button.btn.btn-default.btn-sm(type='button')
+                    button.btn.btn-default.btn-sm(type='button', data-toggle='modal', href='#edit_member')
                       i.fa.fa-pencil
                       |   수정
-                    button.btn.btn-default.btn-sm(type='button')
+                    button.btn.btn-default.btn-sm(type='button', data-toggle='modal', href='#delete_member')
                       i.fa.fa-trash-o
                 tr
                   td 김학범
                   td hans@tport.io
                   td 슈퍼관리자
                   td
-                    button.btn.btn-default.btn-sm(type='button')
+                    button.btn.btn-default.btn-sm(type='button', data-toggle='modal', href='#edit_member')
                       i.fa.fa-pencil
                       |   수정
-                    button.btn.btn-default.btn-sm(type='button')
+                    button.btn.btn-default.btn-sm(type='button', data-toggle='modal', href='#delete_member')
                       i.fa.fa-trash-o
                 tr
                   td 오현석
                   td kevin.oh@tport.io
                   td 슈퍼관리자
                   td
-                    button.btn.btn-default.btn-sm(type='button')
+                    button.btn.btn-default.btn-sm(type='button', data-toggle='modal', href='#edit_member')
                       i.fa.fa-pencil
                       |   수정
-                    button.btn.btn-default.btn-sm(type='button')
+                    button.btn.btn-default.btn-sm(type='button', data-toggle='modal', href='#delete_member')
                       i.fa.fa-trash-o
 
 //- 직원추가 MODAL
@@ -266,17 +265,17 @@ include includes/left_sidebar.pug
 
 //- 직원수정 MODAL
 #edit_member.modal.fade(tabindex='-1', role='basic', aria-hidden='true')
-  .modal-dialog
+  .modal-dialog.modal-lg
     .modal-content
       .modal-header
-        button.close(type='button', data-dismiss='modal', aria-hidden='true')
+        button.close.bs-modal-lg(type='button', data-dismiss='modal', aria-hidden='true')
         h4.modal-title 직원 수정
       .modal-body
         form.form-horizontal(role='form')
           .form-group
             label.col-md-3.control-label(for='inputName') 직원명
             .col-md-6
-              input#inputName.form-control(type='text', placeholder='한글 실명을 입력해주세요')
+              input#inputName.form-control(type='text', value="조영수", placeholder='한글 실명을 입력해주세요')
           .form-group
             label.col-md-3.control-label(for='inputID') 이메일 아이디
             .col-md-6
@@ -285,7 +284,7 @@ include includes/left_sidebar.pug
             label.col-md-3.control-label
             .col-md-8
               .btn.btn-sm.dark 신규 비밀번호 요청
-              span.text-small 이메일로 비밀번호 설정 링크가 전송됩니다.
+              span.text-small  이메일로 비밀번호 설정 링크가 전송됩니다.
           .form-group
             label.col-md-3.control-label 권한
             .col-md-6
@@ -297,7 +296,20 @@ include includes/left_sidebar.pug
 
       .modal-footer
         button.btn.dark.btn-outline(type='button', data-dismiss='modal') 취소
-        button.btn.green(type='button') 추가
+        button.btn.green(type='button') 저장
+
+//- 직원삭제 MODAL
+#delete_member.modal.fade(tabindex='-1', role='basic', aria-hidden='true')
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button.close(type='button', data-dismiss='modal', aria-hidden='true')
+        h4.modal-title 직원 삭제
+      .modal-body
+        .text-center(style="padding:30px;") 조영수님을 직원 목록에서 삭제하시겠습니까?
+      .modal-footer
+        button.btn.dark.btn-outline(type='button', data-dismiss='modal') 취소
+        button.btn.green(type='button') 승인
 
 include includes/footer.pug
 
