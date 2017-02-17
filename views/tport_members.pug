@@ -33,7 +33,7 @@ include includes/left_sidebar.pug
               span.caption-subject 18건의 직원 리스트를 불러왔습니다.
             .right.text-right
               button.btn.btn-success.sbold(data-toggle='modal', href='#add_member')
-                | 직원추가
+                | 직원추가&nbsp;
                 i.fa.fa-plus-circle
           .portlet-body
             table#member_list.table.table-striped.table-bordered.table-hover
@@ -49,7 +49,7 @@ include includes/left_sidebar.pug
                   td sean.han@tport.io
                   td 슈퍼관리자
                   td
-                    button.btn.btn-default.btn-sm(type='button')
+                    button.btn.btn-default.btn-sm(type='button', data-toggle='modal', href='#edit_member')
                       i.fa.fa-pencil
                       |   수정
                     button.btn.btn-default.btn-sm(type='button')
@@ -225,7 +225,7 @@ include includes/left_sidebar.pug
                     button.btn.btn-default.btn-sm(type='button')
                       i.fa.fa-trash-o
 
-//- 직원추가 Modal
+//- 직원추가 MODAL
 #add_member.modal.fade(tabindex='-1', role='basic', aria-hidden='true')
   .modal-dialog
     .modal-content
@@ -258,6 +258,42 @@ include includes/left_sidebar.pug
                 //-   | Radio 3
                 //-   input(type='radio', value='1', name='test')
                 //-   span
+        hr
+        .text-center 입력하신 이메일로 비밀번호 설정 링크가 전송됩니다
+      .modal-footer
+        button.btn.dark.btn-outline(type='button', data-dismiss='modal') 취소
+        button.btn.green(type='button') 추가
+
+//- 직원수정 MODAL
+#edit_member.modal.fade(tabindex='-1', role='basic', aria-hidden='true')
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button.close(type='button', data-dismiss='modal', aria-hidden='true')
+        h4.modal-title 직원 수정
+      .modal-body
+        form.form-horizontal(role='form')
+          .form-group
+            label.col-md-3.control-label(for='inputName') 직원명
+            .col-md-6
+              input#inputName.form-control(type='text', placeholder='한글 실명을 입력해주세요')
+          .form-group
+            label.col-md-3.control-label(for='inputID') 이메일 아이디
+            .col-md-6
+              input#inputID.form-control(type='email', value='damon.cho@tport.io', placeholder='회사 이메일을 입력해주세요')
+          .form-group
+            label.col-md-3.control-label
+            .col-md-8
+              .btn.btn-sm.dark 신규 비밀번호 요청
+              span.text-small 이메일로 비밀번호 설정 링크가 전송됩니다.
+          .form-group
+            label.col-md-3.control-label 권한
+            .col-md-6
+              .mt-radio-list(style="padding-top:10px;")
+                label.mt-radio
+                  | 슈퍼관리자
+                  input(type='radio', value='1', name='test', checked='ture')
+                  span
 
       .modal-footer
         button.btn.dark.btn-outline(type='button', data-dismiss='modal') 취소
