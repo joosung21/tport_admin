@@ -19,6 +19,14 @@ app.get('/tport/members', function (req, res) {
     pageId: 'tport_members',
   })
 })
+app.get('/tport/vendors', function (req, res) {
+  res.render('tport_vendors',{
+    pageId: 'tport_vendors',
+  })
+})
+app.get('/tport/vendors/edit', function (req, res) {
+  res.render('tport_vendor_edit')
+})
 
 // SERVER LISTNER
 app.listen(3000, function () {

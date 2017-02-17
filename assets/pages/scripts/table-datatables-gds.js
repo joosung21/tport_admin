@@ -1,7 +1,7 @@
 // Datatable
 var TableDatatables = function () {
 
-    // Intit Datatable: member_list
+    // Init Datatable: member_list
     var initTable1 = function () {
         var table = $('#member_list');
 
@@ -64,8 +64,9 @@ var TableDatatables = function () {
         });
     }
 
+    // Init Datatable: vendor_list
     var initTable2 = function () {
-        var table = $('#member_list');
+        var table = $('#vendor_list');
 
         var oTable = table.dataTable({
 
@@ -92,7 +93,7 @@ var TableDatatables = function () {
             "bStateSave": true, // save datatable state(pagination, sort, etc) in cookie.
 
             "order": [
-                [2, 'desc']
+                [0, 'desc']
             ],
 
             "lengthMenu": [
@@ -103,17 +104,9 @@ var TableDatatables = function () {
             "pageLength": 15,
 
             "columnDefs": [
-                {  // set default column settings
-                    'orderable': false,
-                    'targets': [3]
-                },
-                {
-                    "searchable": false,
-                    "targets": [3]
-                },
                 {
                     "className": "dt-center",
-                    "targets": [0,2,3]
+                    "targets": [1,2,3,4]
                 }
             ],
 
@@ -134,9 +127,8 @@ var TableDatatables = function () {
             if (!jQuery().dataTable) {
                 return;
             }
-
             initTable1();
-
+            initTable2();
         }
 
     };

@@ -7,11 +7,17 @@
         .sidebar-toggler
           span
       li.heading
+        h3.uppercase Partner
+      li.nav-item(class= pageId == "tport_vendors" ? "active" : "")
+        a.nav-link.nav-toggle(href='/tport/vendors')
+          i.icon-basket-loaded
+          span.title 공급사 관리
+      li.heading
         h3.uppercase ETC
       li.nav-item(class= pageId == "tport_members" ? "active" : "")
         a.nav-link.nav-toggle(href='/tport/members')
           i.icon-users
-          span.title 직원관리
+          span.title 직원 관리
 
           //- span.arrow
         //- ul.sub-menu
