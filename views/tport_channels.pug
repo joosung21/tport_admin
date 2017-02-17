@@ -21,79 +21,68 @@ include includes/left_sidebar.pug
   .page-content
     //-- PAGE TITLE
     h1.page-title
-      | 공급사관리
+      | 판매사 관리
     .row
       .col-md-12
         //- LIST TABLE PORTLET
         .portlet.light.bordered
           .portlet-title
             .caption.font-dark
-              i.icon-basket-loaded.font-dark
-              span.caption-subject 6건의 공급사를 불러왔습니다.
+              i.icon-globe.font-dark
+              span.caption-subject 4건의 판매사를 불러왔습니다.
             .right.text-right
-              a.btn.btn-success.sbold(href="/tport/vendors/edit")
-                | 공급사 추가 &nbsp;
+              a.btn.btn-success.sbold(href="/tport/channels/edit")
+                | 판매사 추가 &nbsp;
                 i.fa.fa-plus-circle
           .portlet-body
-            table#vendor_list.table.table-striped.table-bordered.table-hover
+            table#channel_list.table.table-striped.table-bordered.table-hover
               thead
                 tr
-                  th 공급사명
+                  th 판매사명
+                  th 연동방식
                   th 판매 수수료
                   th 취소 수수료
-                  th 정산(지급) 주기
+                  th 정산(입금) 주기
                   th 계약기간
                   th 특이사항
               tbody
                 tr
                   td
-                    a(href="/tport/vendors/edit") 스테이위드
-                  td 2.00%
-                  td 2.00%
+                    a(href="/tport/channels/edit") 티몬
+                  td API
+                  td 8.00%
+                  td 8.00%
                   td 1주간 판매내역 - 차주 목요일 정산
                   td 2017.12.31까지
                   td
                 tr
                   td
-                    a(href="/tport/vendors/edit") 펜션뱅크
-                  td 4.00%
-                  td 4.00%
-                  td 1주간 판매내역 - 차주 목요일 정산
+                    a(href="/tport/channels/edit") 네이버
+                  td 파트너페이지
+                  td 8.00%
+                  td 8.00%
+                  td 사용처리 후 2일 뒤 정산
+                  td 2017.10.31까지
+                  td 사용처리 기준 - 체크인 3일 후
+                tr
+                  td
+                    a(href="/tport/channels/edit") 올스테이
+                  td API
+                  td 7.00%
+                  td 7.00%
+                  td 1주간 판매내역 - 차주 화요일 정산
                   td 2017.12.31까지
                   td
                 tr
                   td
-                    a(href="/tport/vendors/edit") 떠나요닷컴
-                  td 4.00%
-                  td 4.00%
-                  td 1주간 판매내역 - 차주 목요일 정산
+                    a(href="/tport/channels/edit") 데일리호텔
+                  td API
+                  td 7.00%
+                  td 7.00%
+                  td 2주간 판매내역 - 차주 수요일 정산
                   td 2017.12.31까지
                   td
-                tr
-                  td
-                    a(href="/tport/vendors/edit") 펜션라이프
-                  td 2.00%
-                  td 2.00%
-                  td 1주간 판매내역 - 차주 목요일 정산
-                  td 2017.12.31까지
-                  td
-                tr
-                  td
-                    a(href="/tport/vendors/edit") 몬스테이
-                  td 4.00%
-                  td 4.00%
-                  td 2주간 판매내역 - 2주뒤 목요일 정산
-                  td 2017.12.31까지
-                  td
-                tr
-                  td
-                    a(href="/tport/vendors/edit") bnbtrip
-                  td 4.00%
-                  td 4.00%
-                  td 월간 판매내역 - 차주 목요일 정산
-                  td 계약종료
-                  td 중국업체
-                  
+
 include includes/footer.pug
 
 //- PAGE LEVEL PLUGINS

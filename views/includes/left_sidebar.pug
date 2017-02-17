@@ -12,6 +12,10 @@
         a.nav-link.nav-toggle(href='/tport/vendors')
           i.icon-basket-loaded
           span.title 공급사 관리
+      li.nav-item(class= pageId == "tport_channels" ? "active" : "")
+        a.nav-link.nav-toggle(href='/tport/channels')
+          i.icon-globe
+          span.title 판매사 관리
       li.heading
         h3.uppercase ETC
       li.nav-item(class= pageId == "tport_members" ? "active" : "")
