@@ -7,6 +7,12 @@
         .sidebar-toggler
           span
       li.heading
+        h3.uppercase Sales
+      li.nav-item(class= pageId == "tport_revenue" ? "active" : "")
+        a.nav-link.nav-toggle(href='/tport/revenue')
+          i.icon-flag
+          span.title GDS 예약매출
+      li.heading
         h3.uppercase Partner
       li.nav-item(class= pageId == "tport_vendors" ? "active" : "")
         a.nav-link.nav-toggle(href='/tport/vendors')

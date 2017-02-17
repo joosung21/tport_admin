@@ -35,6 +35,11 @@ app.get('/tport/channels', function (req, res) {
 app.get('/tport/channels/edit', function (req, res) {
   res.render('tport_channel_edit')
 })
+app.get('/tport/revenue', function (req, res) {
+  res.render('tport_revenue',{
+    pageId: 'tport_revenue',
+  })
+})
 
 // SERVER LISTNER
 app.listen(3000, function () {

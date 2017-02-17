@@ -75,10 +75,17 @@ include includes/left_sidebar.pug
               .form-group.form-inline
                 label.col-md-2.control-label 계약기간
                 .col-md-10
-                  .input-group.input-large.date-picker.input-daterange(data-date='03/01/2017', data-date-format='mm/dd/yyyy')
-                    input.form-control(type='text', name='from', value='03/01/2017')
-                    span.input-group-addon -
-                    input.form-control(type='text', name='to', value='03/01/2018')
+                  .input-group.input-small.date.date-picker(data-date-format='yyyy.mm.dd', data-date-start-date='+0d')
+                    input.form-control(type='text', readonly='')
+                    span.input-group-btn
+                      button.btn.default(type='button')
+                        i.fa.fa-calendar
+                  span  ~
+                  .input-group.input-small.date.date-picker(data-date-format='yyyy.mm.dd', data-date-start-date='+0d')
+                    input.form-control(type='text', readonly='')
+                    span.input-group-btn
+                      button.btn.default(type='button')
+                        i.fa.fa-calendar
                   label.mt-checkbox
                     | 계약종료
                     input(type='checkbox', value='1', name='test')
