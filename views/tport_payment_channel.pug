@@ -75,15 +75,230 @@ include includes/left_sidebar.pug
                   td 2.00%
                   td 72,600원
                   td
-                    a(data-toggle='modal', href='#reservation_detail') 상세내역
+                    a.btn.btn-default.btn-sm(data-toggle='modal', href='#payment_detail') 상세내역
                   td
-                  td 145,000원
+                    select.form-control.input-small.input-sm
+                      option 정산완료
+                      option(selected) 정산대기
+                tr
+                  td 2017.02.09(목)
+                  td 2017.01.30(월)~2017.02.05(일)
+                  td 펜션뱅크
+                  td 3,630,000원
+                  td 4.00%
+                  td 145,200원
                   td
+                    a.btn.btn-default.btn-sm(data-toggle='modal', href='#payment_detail') 상세내역
+                  td
+                    select.form-control.input-small.input-sm
+                      option 정산완료
+                      option(selected) 정산대기
+                tr
+                  td 2017.02.09(목)
+                  td 2017.01.30(월)~2017.02.05(일)
+                  td 떠나요닷컴
+                  td 3,630,000원
+                  td 2.00%
+                  td 72,600원
+                  td
+                    a.btn.btn-default.btn-sm(data-toggle='modal', href='#payment_detail') 상세내역
+                  td
+                    select.form-control.input-small.input-sm
+                      option 정산완료
+                      option(selected) 정산대기
+                tr
+                  td 2017.02.09(목)
+                  td 2017.01.30(월)~2017.02.05(일)
+                  td 펜션라이프
+                  td 3,630,000원
+                  td 4.00%
+                  td 145,200원
+                  td
+                    a.btn.btn-default.btn-sm(data-toggle='modal', href='#payment_detail') 상세내역
+                  td
+                    select.form-control.input-small.input-sm
+                      option(selected) 정산완료
+                      option 정산대기
+                tr
+                  td 2017.02.09(목)
+                  td 2017.01.30(월)~2017.02.05(일)
+                  td 몬스테이
+                  td 3,630,000원
+                  td 2.00%
+                  td 72,600원
+                  td
+                    a.btn.btn-default.btn-sm(data-toggle='modal', href='#payment_detail') 상세내역
+                  td
+                    select.form-control.input-small.input-sm
+                      option(selected) 정산완료
+                      option 정산대기
+
+//- 정산 상세내역 MODAL
+#payment_detail.modal.fade(tabindex='-1', role='basic', aria-hidden='true')
+  .modal-dialog.modal-lg
+    .modal-content
+      .modal-header
+        button.close(type='button', data-dismiss='modal', aria-hidden='true')
+        h4.modal-title 상세내역
+      .modal-body
+        table.table.table-bordered.info-table
+          thead
+            tr
+              th 총 판매금액
+              th 공급사 수수료
+              th 수기정산
+              th 공급사 정산액
+          tbody
+            tr.text-center
+              td 3,630,000원
+              td 2.00%
+              td 0원
+              td 72,600원
+        //- 수기정산
+        //- h4 수기정산
+        //- table.table.table-bordered.info-table
+          thead
+            tr
+              th 수기정산 상세내용
+              th 관리
+          tbody
+            tr
+              td
+                .form-group.form-inline(style='margin-bottom:0')
+                  select.form-control.input-sxmall
+                    option (+)증액
+                    option(selected) (-)차감
+                  input.form-control.input-small(type='text', value='10,000', placeholder='')
+                  input.form-control.input-xlarge(type='text', value='2017.02.05 미정산 금액', placeholder='')
+              td
+                button.btn.btn-default
+                  i.fa.fa-pencil
+                  |   수정
+                button.btn.btn-default
+                  i.fa.fa-trash-o
+                  |   삭제
+            tr.bg-grey-cararra
+              td
+                .form-group.form-inline(style='margin-bottom:0')
+                  select.form-control.input-sxmall
+                    option (+)증액
+                    option(selected) (-)차감
+                  input.form-control.input-small(type='text', value='', placeholder='금액')
+                  input.form-control.input-xlarge(type='text', value='', placeholder='수기정산 내역을 입력해주세요')
+              td
+                button.btn.btn-default.blue
+                  i.fa.fa-plus-circle
+                  |   저장
+
+        h4 GDS 예약매출
+        table.table.table-striped.table-bordered.table-hover.info-table
+          thead
+            tr
+              th 예약번호
+              th 지역
+              th 숙소명
+              th 상품명
+              th 고객명
+              th 판매일시
+              th 체크인
+              th 판매금액
+              th 상태
+          tbody
+            tr
+              td
+                a(data-toggle='modal', href='#reservation_detail') T210EF
+              td 경기 가평군
+              td 가평보라빛향기 펜션
+              td 자스민
+              td 김선
+              td 2017.02.10 10:20
+              td 2017.02.12(1박)
+              td 145,000원
+              td 판매완료
+            tr
+              td
+                a(data-toggle='modal', href='#reservation_detail') N327AO
+              td 강원 홍천군
+              td 둥지속하얀집
+              td 새알하나
+              td 전동호
+              td 2017.02.10 10:20
+              td 2017.02.12(1박)
+              td
+                span.text-line-through 410,000원
+                br
+                | 82,000원
+              td
+                span.font-red 판매취소
+                br
+                span.font-small.font-purple 2일전취소
+            tr
+              td
+                a(data-toggle='modal', href='#reservation_detail') T210EF
+              td 강원 평창군
+              td 아리스토이펜션
+              td 낙산
+              td 김윤지
+              td 2017.02.10 10:20
+              td 2017.02.12(1박)
+              td
+                span.text-line-through 410,000원
+              td.font-red 판매취소
+            tr
+              td
+                a(data-toggle='modal', href='#reservation_detail') T210EF
+              td 경기 양편군
+              td 핑크하우스
+              td 아쿠아마린
+              td 이동욱
+              td 2017.02.10 10:20
+              td 2017.02.12(1박)
+              td 145,000원
+              td 판매완료
+            tr
+              td
+                a(data-toggle='modal', href='#reservation_detail') T210EF
+              td 경기 가평군
+              td 가평보라빛향기 펜션
+              td 자스민
+              td 정미경
+              td 2017.02.10 10:20
+              td 2017.02.12(1박)
+              td 145,000원
+              td 판매완료
+        .text-right
+          ul.pagination.pagination-sm
+            li
+              a(href='javascript:;')
+                i.fa.fa-angle-left
+            li
+              a(href='javascript:;')  1
+            li.active
+              a(href='javascript:;')  2
+            li
+              a(href='javascript:;')  3
+            li
+              a(href='javascript:;')  4
+            li
+              a(href='javascript:;')  5
+            li
+              a(href='javascript:;')  6
+            li
+              a(href='javascript:;')
+                i.fa.fa-angle-right
+
+      .modal-footer
+        .col-md-6.text-left
+          button.btn.blue(type='button')
+            | 수기정산&nbsp;
+            i.fa.fa-plus-circle
+        .col-md-6
+          button.btn.dark.btn-outline(type='button', data-dismiss='modal') 닫기
 
 
 //- 예약정보 MODAL
 #reservation_detail.modal.fade(tabindex='-1', role='basic', aria-hidden='true')
-  .modal-dialog.modal-lg
+  .modal-dialog
     .modal-content
       .modal-header
         button.close(type='button', data-dismiss='modal', aria-hidden='true')
