@@ -40,6 +40,11 @@ app.get('/tport/revenue', function (req, res) {
     pageId: 'tport_revenue',
   })
 })
+app.get('/tport/payment/channel', function (req, res) {
+  res.render('tport_payment_channel',{
+    pageId: 'tport_payment_channel',
+  })
+})
 
 // SERVER LISTNER
 app.listen(3000, function () {

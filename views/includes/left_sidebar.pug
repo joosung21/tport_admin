@@ -13,6 +13,12 @@
           i.icon-flag
           span.title GDS 예약매출
       li.heading
+        h3.uppercase Payment
+      li.nav-item(class= pageId == "tport_payment_channel" ? "active" : "")
+        a.nav-link.nav-toggle(href='/tport/payment/channel')
+          i.icon-cloud-upload
+          span.title 공급사 정산
+      li.heading
         h3.uppercase Partner
       li.nav-item(class= pageId == "tport_vendors" ? "active" : "")
         a.nav-link.nav-toggle(href='/tport/vendors')
