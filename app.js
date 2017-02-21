@@ -62,6 +62,16 @@ app.get('/vendor/login', function (req, res) {
 app.get('/vendor/login/set-pw', function (req, res) {
   res.render('vendor_login_setpw')
 })
+app.get('/vendor/members', function (req, res) {
+  res.render( 'vendor_members',{
+    pageId: 'vendor_members',
+  })
+})
+app.get('/vendor/contract', function (req, res) {
+  res.render( 'vendor_contract',{
+    pageId: 'vendor_contract',
+  })
+})
 
 
 // SERVER LISTNER

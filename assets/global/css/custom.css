@@ -12,6 +12,7 @@
   color: #ffffff;
   text-decoration: none;
   margin-top: 11px;
+  min-width: 200px;
 }
 .page-logo a span{
   color: #ea3f41;
@@ -59,4 +60,22 @@ button i{
   content: "|";
   padding: 0 10px;
   color: #e7e7e7;
+}
+
+.no-input .form-group .value{
+  padding-top: 9px;
+}
+
+/* Left Side Bar Support */
+ul.page-sidebar-menu li.support{
+  background-color: #3E4857;
+  color: #b0b3b8;
+  padding: 20px 0;
+  margin: 18px;
+  text-align: center;
+}
+ul.page-sidebar-menu li.support h4,
+ul.page-sidebar-menu li.support p{
+  padding: 4px;
+  margin: 0;
 }

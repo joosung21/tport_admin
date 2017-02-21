@@ -1,0 +1,21 @@
+.page-sidebar-wrapper
+  .page-sidebar.navbar-collapse.collapse
+    //- SIDEBAR MENU
+    ul.page-sidebar-menu.page-header-fixed(data-keep-expanded='false', data-auto-scroll='true', data-slide-speed='200', style='padding-top: 20px')
+      //- SIDEBAR TOGGLER BUTTON
+      li.sidebar-toggler-wrapper.hide
+        .sidebar-toggler
+          span
+      li.heading
+        h3.uppercase Setting
+      li.nav-item(class= pageId == "vendor_members" ? "active" : "")
+        a.nav-link.nav-toggle(href='/vendor/members')
+          i.icon-users
+          span.title 직원관리
+      li.nav-item(class= pageId == "vendor_contract" ? "active" : "")
+        a.nav-link.nav-toggle(href='/vendor/contract')
+          i.icon-folder-alt
+          span.title 계약정보
+      li.support
+        p 티포트 지원센터
+        h4.sbold 02-2138-8050
