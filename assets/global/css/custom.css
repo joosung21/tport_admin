@@ -79,3 +79,7 @@ ul.page-sidebar-menu li.support p{
   padding: 4px;
   margin: 0;
 }
+
+.page-sidebar-closed .page-sidebar .page-sidebar-menu.page-sidebar-menu-closed>li.support {
+    display: none;
+}
