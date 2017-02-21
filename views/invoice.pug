@@ -1,0 +1,148 @@
+include includes/header.pug
+
+//- PAGE LEVEL PLUGINS
+
+//- THEME GLOBAL STYLES
+link(href='/assets/global/css/components.min.css', rel='stylesheet', type='text/css')
+link(href='/assets/global/css/plugins.min.css', rel='stylesheet', type='text/css')
+//- PAGE LEVEL STYLES
+link(href='/assets/pages/css/invoice.css', rel='stylesheet', type='text/css')
+//- THEME LAYOUT STYLES
+link(href='/assets/layouts/layout/css/layout.min.css', rel='stylesheet', type='text/css')
+link(href='../assets/layouts/layout/css/themes/darkblue.min.css', rel='stylesheet', type='text/css')
+link(href='/assets/layouts/layout/css/custom.min.css', rel='stylesheet', type='text/css')
+link(rel='shortcut icon', href='favicon.png')
+
+include includes/body_top.pug
+include includes/left_sidebar.pug
+
+//- CONTENT
+.page-content-wrapper
+  //- CONTENT BODY
+  .page-content
+
+    .invoice
+      .row
+        .text-center.col-xs-8.col-xs-offset-2
+          img(src='/images/tport_ci.png', style='width:250px')
+          br
+          hr
+          br
+          h1 INVOICE
+          h4 TEL: 02-2138-8050, FAX: 0507-351-4978
+          hr
+          table.table.table-bordered
+            tbody
+              tr
+                td To
+                td 가평 보라빛 향기펜션
+              tr
+                td From
+                td T PORT INC.(332-87-00460)
+              tr
+                td date
+                td 2017.02.16
+              tr
+                td Invoice No.
+                td 0002
+              tr
+                td 중개수수료
+                td 15%
+          br
+        .text-center.col-xs-12
+          h3 정산 리포트
+          table.table.table-bordered
+            thead
+              tr
+                th 판매채널
+                th 상품명
+                th 고객명
+                th 판매일시
+                th 체크인
+                th 판매금액
+                th 정산금액
+            tbody
+              tr
+                td 티몬
+                td 쟈스민
+                td 김선
+                td 2017.02.10 10:20
+                td 2017.02.12(1박)
+                td 145,000원
+                td 123,250원
+              tr
+                td 네이버
+                td 새알하나
+                td 전동호
+                td 2017.02.10 10:20
+                td 2017.02.12(1박)
+                td 145,000원
+                td 123,250원
+              tr
+                td 티몬
+                td 낙산
+                td 김윤지
+                td 2017.02.10 10:20
+                td 2017.02.12(1박)
+                td
+                  | 82,000원
+                  br
+                  | (2일전취소)
+                td 69,700원
+              tr
+                td 올스테이
+                td 아쿠아마린
+                td 이동욱
+                td 2017.02.10 10:20
+                td 2017.02.12(1박)
+                td 145,000원
+                td 123,250원
+              tr
+                td 데일리호텔
+                td 게으름
+                td 김은비
+                td 2017.02.10 10:20
+                td 2017.02.12(1박)
+                td 145,000원
+                td 123,250원
+              tr
+                td 네이버
+                td 새알하나
+                td 전동호
+                td 2017.02.10 10:20
+                td 2017.02.12(1박)
+                td 145,000원
+                td 123,250원
+              tr
+                td.font-blue(colspan='5') 합계
+                td.font-blue 662,000원
+                td.font-blue.bold 562,700원
+        .text-center.col-xs-8.col-xs-offset-2
+          h3 수기정산
+          table.table.table-bordered
+            thead
+              tr
+                th 내역
+                th 정산금액
+            tbody
+              tr
+                td 지난 주 미지급 금액
+                td 20,000원
+              tr
+                td 예치금 차감
+                td -50,000원
+          h3(style='border:3px solid #333; padding:0.7em 0 0.7em 0') 총 전산금액 532,700원
+          h5 입금계좌 ㅣ NH농협 / 301-6353-2496-71 / 예금주: 김래정
+      .text-right
+        a.btn.btn-lg.blue.hidden-print.margin-bottom-5(onclick='javascript:window.print();')
+          | INVOICE 인쇄하기 &nbsp;
+          i.fa.fa-print
+
+include includes/footer.pug
+
+//- PAGE LEVEL PLUGINS
+
+//- THEME GLOBAL SCRIPTS
+script(src='/assets/global/scripts/app.min.js', type='text/javascript')
+//- THEME LAYOUT SCRIPTS
+script(src='/assets/layouts/layout/scripts/layout.min.js', type='text/javascript')

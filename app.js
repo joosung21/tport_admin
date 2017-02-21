@@ -8,11 +8,15 @@ app.use('/assets', express.static('assets'))
 app.use('/lang', express.static('lang'))
 app.use('/', express.static('public'))
 
+// Tport Admin Routing
 app.get('/tport/login', function (req, res) {
   res.render('tport_login')
 })
 app.get('/tport/login/set-pw', function (req, res) {
   res.render('tport_login_setpw')
+})
+app.get('/invoice', function (req, res) {
+  res.render('invoice')
 })
 app.get('/tport/members', function (req, res) {
   res.render( 'tport_members',{
@@ -45,6 +49,20 @@ app.get('/tport/payment/channel', function (req, res) {
     pageId: 'tport_payment_channel',
   })
 })
+app.get('/tport/payment/seller', function (req, res) {
+  res.render('tport_payment_seller',{
+    pageId: 'tport_payment_seller',
+  })
+})
+
+// Vendor Admin Routing
+app.get('/vendor/login', function (req, res) {
+  res.render('vendor_login')
+})
+app.get('/vendor/login/set-pw', function (req, res) {
+  res.render('vendor_login_setpw')
+})
+
 
 // SERVER LISTNER
 app.listen(3000, function () {
