@@ -72,7 +72,16 @@ app.get('/vendor/contract', function (req, res) {
     pageId: 'vendor_contract',
   })
 })
-
+app.get('/vendor/revenue', function (req, res) {
+  res.render( 'vendor_revenue',{
+    pageId: 'vendor_revenue',
+  })
+})
+app.get('/vendor/payment', function (req, res) {
+  res.render( 'vendor_payment',{
+    pageId: 'vendor_payment',
+  })
+})
 
 // SERVER LISTNER
 app.listen(3000, function () {

@@ -7,6 +7,16 @@
         .sidebar-toggler
           span
       li.heading
+        h3.uppercase Sales &amp; Pay
+      li.nav-item(class= pageId == "vendor_revenue" ? "active" : "")
+        a.nav-link.nav-toggle(href='/vendor/revenue')
+          i.icon-flag
+          span.title 예약현황
+      li.nav-item(class= pageId == "vendor_payment" ? "active" : "")
+        a.nav-link.nav-toggle(href='/vendor/payment')
+          i.icon-calculator
+          span.title 정산현황
+      li.heading
         h3.uppercase Setting
       li.nav-item(class= pageId == "vendor_members" ? "active" : "")
         a.nav-link.nav-toggle(href='/vendor/members')
