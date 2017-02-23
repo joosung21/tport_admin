@@ -80,6 +80,12 @@ ul.page-sidebar-menu li.support p{
   margin: 0;
 }
 
+/* Sidebar Info hidden when closed */
 .page-sidebar-closed .page-sidebar .page-sidebar-menu.page-sidebar-menu-closed>li.support {
     display: none;
+}
+
+/* btn-ouline boder */
+.btn.default:not(.btn-outline) {
+  border: 1px solid #c2cad8 !important;
 }
