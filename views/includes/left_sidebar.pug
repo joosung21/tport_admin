@@ -32,6 +32,10 @@
         a.nav-link.nav-toggle(href='/tport/channels')
           i.icon-globe
           span.title 판매사 관리
+      li.nav-item(class= pageId == "tport_sellers" ? "active" : "")
+        a.nav-link.nav-toggle(href='/tport/sellers')
+          i.icon-home
+          span.title 숙소 관리
       li.heading
         h3.uppercase ETC
       li.nav-item(class= pageId == "tport_members" ? "active" : "")

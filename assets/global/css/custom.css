@@ -89,3 +89,24 @@ ul.page-sidebar-menu li.support p{
 .btn.default:not(.btn-outline) {
   border: 1px solid #c2cad8 !important;
 }
+
+/* Datatable head filters */
+.portlet-title{
+  position: relative;
+}
+.portlet-title .table_filters{
+  position: absolute;
+  top: 67px;
+  left: 175px;
+  z-index: 1;
+}
+.portlet-title .table_filters select.form-control{
+  padding: 3px 10px 5px 10px;
+  height: 30px;
+}
+@media screen and (max-width: 767px){
+  .portlet-title .table_filters{
+    position: absolute;
+    top:57px;
+    left:0;
+}

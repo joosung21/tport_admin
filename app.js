@@ -36,6 +36,11 @@ app.get('/tport/channels', function (req, res) {
     pageId: 'tport_channels',
   })
 })
+app.get('/tport/sellers', function (req, res) {
+  res.render('tport_sellers',{
+    pageId: 'tport_sellers',
+  })
+})
 app.get('/tport/channels/edit', function (req, res) {
   res.render('tport_channel_edit')
 })
