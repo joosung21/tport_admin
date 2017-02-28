@@ -59,6 +59,16 @@ app.get('/tport/payment/seller', function (req, res) {
     pageId: 'tport_payment_seller',
   })
 })
+app.get('/tport/code/system', function (req, res) {
+  res.render('tport_code_system',{
+    pageId: 'tport_code_system',
+  })
+})
+app.get('/tport/code/general', function (req, res) {
+  res.render('tport_code_general',{
+    pageId: 'tport_code_general',
+  })
+})
 
 // Vendor Admin Routing
 app.get('/vendor/login', function (req, res) {

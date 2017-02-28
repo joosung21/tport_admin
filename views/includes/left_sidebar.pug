@@ -42,6 +42,14 @@
         a.nav-link.nav-toggle(href='/tport/members')
           i.icon-users
           span.title 직원 관리
+      li.nav-item(class= pageId == "tport_code_system" ? "active" : "")
+        a.nav-link.nav-toggle(href='/tport/code/system')
+          i.icon-game-controller
+          span.title 시스템코드 관리
+      li.nav-item(class= pageId == "tport_code_general" ? "active" : "")
+        a.nav-link.nav-toggle(href='/tport/code/general')
+          i.icon-puzzle
+          span.title 일반코드 관리
 
           //- span.arrow
         //- ul.sub-menu

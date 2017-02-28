@@ -1,3 +1,22 @@
+.vetical-middle, .vetical-middle *{
+  vertical-align: middle !important;
+}
+.btn-list-order:hover{
+  cursor: move;
+}
+.btn.btn-list-order.default:not(.btn-outline){
+  background: none !important;
+  border: none !important;
+}
+.table-code .mt-radio{
+  margin-bottom: 0;
+}
+.table-code .mt-checkbox-list{
+  text-align: left;
+  margin-left: 140px;
+  background: #f9f9fc;
+  padding: 10px 10px 1px 10px;
+}
 /* Logo */
 .logo a, .logo a:hover{
   font-size: 25px;
@@ -90,6 +109,13 @@ ul.page-sidebar-menu li.support p{
   border: 1px solid #c2cad8 !important;
 }
 
+/* Portlet nav active style */
+.portlet-body .nav>li.active>a {
+    color: #3f444a;
+    background-color: #f1f4f7 !important;
+}
+
+
 /* Datatable head filters */
 .portlet-title{
   position: relative;
@@ -109,4 +135,5 @@ ul.page-sidebar-menu li.support p{
     position: absolute;
     top:57px;
     left:0;
+  }
 }
